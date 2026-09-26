@@ -1,0 +1,13 @@
+﻿using System;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Demostración del Patrón de Diseño Proxy en C#");
+
+        IDocumentoServicio servicio = new DocumentoServicioProxy();
+        servicio.AccederDocumento("Carlos", "Empleado");
+        servicio.AccederDocumento("Ana", "Admin");
+    }
+}
